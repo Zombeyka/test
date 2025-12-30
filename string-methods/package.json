@@ -1,0 +1,17 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "* Кодовое представление символов (char) - `charAt(0)` возвращает символ строки по индексу. `charCodeAt(0)` - возвращает числовое значение для заданного по индексу символа.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "tasks-methods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task-1-hard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0"
+  }
+}

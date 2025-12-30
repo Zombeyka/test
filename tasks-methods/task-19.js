@@ -1,0 +1,8 @@
+const emailUsers = [
+    { id: 1, email: 'user1@example.com' },
+    { id: 2, email: 'user2@example.com' },
+    { id: 3, email: 'user3@example.com' }
+];
+const extractEmails = emailUsers.map(({ email }) => email);
+console.log(extractEmails);
+// Выполнил
