@@ -10,22 +10,32 @@ const createRandomUser = () => {
 };
 // console.log(createRandomUser());
 
-const getRandomUsers = (countUser) => {
-    const data = [];
-    for (let i = 0; i < countUser; i++) {
-        data.push(faker.person.firstName());
-    }
-    return {
-        name: data.filter(name => name.length <= 5),
-        email: faker.internet.email()
-    };
-};
-
-console.log(getRandomUsers(5));
-
-// const shortNames = () => {
+// const getRandomUsers = (countUser) => {
 //     const data = [];
-//     data.map((faker.person.fullName()));
-//     return data;
+//     for (let i = 0; i < countUser; i++) {
+//         data.push(faker.person.firstName());
+//     }
+//     // return {
+//     //     name: data.filter(name => name.length <= 5),
+//     //     email: faker.internet.email()
+//     // };
+//     const filtreredUsersNames = data.filter(name => name.length <= 5);
+//     const usersWithEmail = filtreredUsersNames.map((userName) => ({
+//         name: userName,
+//         email: faker.internet.email()
+//     }));
+//     return usersWithEmail;
 // };
-// console.log(shortNames(""));
+
+// console.log(getRandomUsers(20));
+
+// внутри for - while (с флажком). 
+
+// const getRandomUser = (minNameLength, maxNameLength) => {
+//     const randomUser = faker.person.firstName();
+//     if (randomUser.length <= maxNameLength && randomUser.length >= minNameLength) {
+//         return randomUser;
+//     }
+//     return getRandomUser(minNameLength, maxNameLength);
+// };
+// console.log(getRandomUser(7, 8));
