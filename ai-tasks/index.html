@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Мой тест</title>
+    <style>
+        body {
+            transition: background 0.5s;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <button id="myButton">Нажми меня!</button>
+
+    <script>
+        // Вот твой полигон для if/else
+        const button = document.getElementById('myButton');
+        const body = document.getElementById('body');
+        let isColorChanged = false; // Переменная-флаг
+
+        button.onclick = function () {
+            // Твоя логика здесь
+            if (!isColorChanged) {
+                body.style.background = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                button.textContent = "ДЖОННИ, ОТМЕНА!";
+                isColorChanged = true;
+            } else {
+                body.style.background = "pink";
+                button.textContent = "ТЫК!";
+                isColorChanged = false;
+            }
+
+            // ДОПОЛНИТЕЛЬНО (если захочешь):
+            // Попробуй добавить else if для третьего состояния
+            // Например, else if (isColorChanged === 2) { ... }
+        };
+    </script>
+</body>
+
+</html>

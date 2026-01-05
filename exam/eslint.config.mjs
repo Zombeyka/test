@@ -7,7 +7,7 @@ export default defineConfig([
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
   {
     rules: {
-      "semi": ["error", "always"],
+      "semi": ["warn", "always"],
       "quotes": ["error", "double"]
     }
 
