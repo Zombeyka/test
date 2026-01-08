@@ -12,8 +12,8 @@ const { faker } = require("@faker-js/faker");
 
 const getRandomUsers = (countUser) => {
     const data = [];
-    let flag = false;
     for (let i = 0; i < countUser; i++) {
+        let flag = false;
         let counter = 0;
         while (counter < countUser) {
             flag = true;
